@@ -1,5 +1,6 @@
 import ProgressFrame
 import Root
+import StepFrame
 import TikTokLinkCapture
 
 #TODO
@@ -20,6 +21,7 @@ def main():
     window_height = 800
     root = Root.create_root_window(window_width, window_height)
     root = ProgressFrame.initialise_progress_frame(root)
+    root = StepFrame.initialise_step_frame(root)
     root.mainloop()
 
 if __name__ == '__main__':
