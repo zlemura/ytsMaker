@@ -14,6 +14,7 @@ import TikTokLinkCapture
 # Drag and drop narration video.
 # Resize narration video.
 # Generate final video.
+import TikTokVideoCapture
 
 
 def main():
@@ -21,7 +22,8 @@ def main():
     window_height = 800
     root = Root.create_root_window(window_width, window_height)
     root = ProgressFrame.initialise_progress_frame(root)
-    root = StepFrame.initialise_step_frame(root)
+    #root = StepFrame.initialise_step_frame(root)
+    root = TikTokVideoCapture.initialise_frame(root)
     root.mainloop()
 
 if __name__ == '__main__':
